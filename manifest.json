@@ -1,0 +1,20 @@
+{
+  "name": "GodGift Birdy Game",
+  "short_name": "BirdyGame",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#21ff19",
+  "theme_color": "#6978ff",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+/* ----------------------------
+   General Page Styling
+---------------------------- */
+@font-face {
+    font-family: 'MyGameFont';
+    src: url('fonts/comic.ttf') format('truetype'); 
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    text-align: center;
+    font-family: 'MyGameFont', "Comic Sans MS", cursive; 
+    background-color: #21ff19;
+    margin: 0;
+    padding: 10px 0; /* Reduced padding for small screens */
+    color: #333;
+    overflow-x: hidden;
+    /* Prevents pulling down to refresh on mobile */
+    overscroll-behavior-y: contain;
+
+h1 {
+    text-shadow: 2px 2px 0px rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+}
+
+/* ----------------------------
+   Canvas Styling
+---------------------------- */
+canvas {
+    background-image: url('background.png'); 
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin: auto;
+    border: 4px solid #000;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    
+    /* Responsive Magic */
+    width: 95vw;       /* Scale to 95% of the screen width */
+    max-width: 400px;  /* Never get bigger than 400px on desktop */
+    height: auto;      /* Keep the square aspect ratio */
+    
+    touch-action: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* ----------------------------
+   Start Button Styling
+---------------------------- */
+#startButton {
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-family: 'MyGameFont', cursive;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #6978ff;  
+    color: white;
+    border: 3px solid #000;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+    transition: all 0.1s ease-in-out;
+}
+
+#startButton:hover {
+    background-color: #6eff69;
+    color: black;
+    transform: translateY(-2px);
+}
+
+#startButton:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+#nftCanvas {
+    border: 4px solid #6978ff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px rgba(105, 120, 255, 0.5);
+    margin: auto;
+    display: none;
+    cursor: default;
+}
