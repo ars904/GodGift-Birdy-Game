@@ -205,7 +205,7 @@ window.onload = function () {
             btn._drawX = x;
             btn._drawY = y;
 
-            ctx.fillStyle = "rgba(0,0,0,0.6)";
+            ctx.fillStyle = "rgba(0,0,0,0.4)";
             ctx.fillRect(x - 80, y - 20, 160, 40);
 
             ctx.fillStyle = "white";
@@ -234,7 +234,7 @@ window.onload = function () {
     function drawGameOver() {
         if (!game.gameOver) return;
 
-        ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.4)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.textAlign = "center";
@@ -255,14 +255,14 @@ window.onload = function () {
         const btnX = canvas.width / 2 - buttonWidth / 2;
 
         const playY = 220;
-        ctx.fillStyle = "rgba(0,0,0,0.6)";
+        ctx.fillStyle = "rgba(0,0,0,0.4)";
         ctx.fillRect(btnX, playY, buttonWidth, buttonHeight);
         ctx.fillStyle = "white";
         ctx.font = "bold 16px " + gameFont;
         ctx.fillText("Play Again", canvas.width / 2, playY + 32);
 
         const menuY = 290;
-        ctx.fillStyle = "rgba(0,0,0,0.6)";
+        ctx.fillStyle = "rgba(0,0,0,0.4)";
         ctx.fillRect(btnX, menuY, buttonWidth, buttonHeight);
         ctx.fillStyle = "white";
         ctx.font = "bold 16px " + gameFont;
