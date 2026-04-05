@@ -234,7 +234,7 @@ window.onload = function () {
     function drawGameOver() {
         if (!game.gameOver) return;
 
-        ctx.fillStyle = "rgba(0, 0, 0, 0.8)";
+        ctx.fillStyle = "rgba(0, 0, 0, 0.5)";
         ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         ctx.textAlign = "center";
